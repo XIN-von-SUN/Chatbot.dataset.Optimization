@@ -13,7 +13,7 @@ For Rasa.
 For Dialogflow.
 1. dialogflow_NLU.py used for dialogflow NLU agent processing, including agent training, test and evaluation, and also all dataset processing operations based on 6 different dimensions.
 
-2. dialogflow_run.py also used for final one-click loop, so just run this file, we can get final evalution result based on all combinations of dimensions.
+2. dialogflow_NLU.py also used for final one-click loop, so just run this file, we can get final evalution result based on all combinations of dimensions.
 
 3. All result are svaed in file dialogflow_result, since we run the file on both GCP and uni server, so we get 2 result respectively.
 
