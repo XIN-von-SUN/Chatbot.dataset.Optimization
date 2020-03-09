@@ -1,0 +1,3 @@
+,model_name,dim1_rm,dim2_sent_len,dim3_sent_num,dim4_pattern,dim5_SDPs,dim6_keywords,overall_accuracy,overall_precision,overall_f1_score
+0,False-False-15-question-True-False,False,False,15,question,True,False,0.4025337147527583,0.5319130092683703,
+1,False-False-15-question-False-True,False,False,15,question,False,True,0.45387613685578143,0.5540803366104842,

@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/xinsun/Dev_env/Bot.Dataset.final/Rasa/models/nlu/True-5-20-statement-True-True/component_6_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/Users/xinsun/Dev_env/Bot.Dataset.final/Rasa/models/nlu/True-5-20-statement-True-True/component_6_EmbeddingIntentClassifier.ckpt"

@@ -1,0 +1,46 @@
+len of final df: 14811
+./dialogflow_result/sub_datasets/True-False-False-False-True-False.txt
+_________________________ One dimension sub dataset is completed!
+number of intents is: 151
+number of intents phrase is: 151
+True-False-False-False-True-False
+Traceback (most recent call last):
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/grpc_helpers.py", line 57, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/grpc/_channel.py", line 690, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/grpc/_channel.py", line 592, in _end_unary_response_blocking
+    raise _Rendezvous(state, None, None, deadline)
+grpc._channel._Rendezvous: <_Rendezvous of RPC that terminated with:
+	status = StatusCode.NOT_FOUND
+	details = "com.google.apps.framework.request.NotFoundException: No DesignTimeAgent found for project 'newagent-fpxjnq'."
+	debug_error_string = "{"created":"@1582675242.336388000","description":"Error received from peer ipv4:172.217.18.170:443","file":"src/core/lib/surface/call.cc","file_line":1055,"grpc_message":"com.google.apps.framework.request.NotFoundException: No DesignTimeAgent found for project 'newagent-fpxjnq'.","grpc_status":5}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "dialogflow_NLU.py", line 596, in <module>
+    dialogflow_nlu_loop(project_id, data_file, write_file, test_data, dimensions[:1])
+  File "dialogflow_NLU.py", line 489, in dialogflow_nlu_loop
+    response = client.batch_delete_intents(parent, intents)
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/dialogflow_v2/gapic/intents_client.py", line 902, in batch_delete_intents
+    request = intent_pb2.BatchDeleteIntentsRequest(parent=parent, intents=intents)
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/page_iterator.py", line 212, in _items_iter
+    for page in self._page_iter(increment=False):
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/page_iterator.py", line 243, in _page_iter
+    page = self._next_page()
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/page_iterator.py", line 534, in _next_page
+    response = self._method(self._request)
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/gapic_v1/method.py", line 143, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/retry.py", line 286, in retry_wrapped_func
+    on_error=on_error,
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/timeout.py", line 214, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/xinsun/anaconda3/envs/dev/lib/python3.7/site-packages/google/api_core/grpc_helpers.py", line 59, in error_remapped_callable
+    six.raise_from(exceptions.from_grpc_error(exc), exc)
+  File "<string>", line 3, in raise_from
+google.api_core.exceptions.NotFound: 404 com.google.apps.framework.request.NotFoundException: No DesignTimeAgent found for project 'newagent-fpxjnq'.

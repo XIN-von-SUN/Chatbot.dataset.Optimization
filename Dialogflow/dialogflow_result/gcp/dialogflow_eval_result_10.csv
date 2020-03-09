@@ -1,0 +1,6 @@
+,model_name,dim1_rm,dim2_sent_len,dim3_sent_num,dim4_pattern,dim5_SDPs,dim6_keywords,overall_accuracy,overall_precision,overall_f1_score
+0,True-15-15-question-False-False,True,15,15,question,False,False,0.5073969153289266,0.6324490533750787,
+1,True-15-50-False-False-False,True,15,50,False,False,False,0.5676320272572404,0.6709934402590434,
+2,True-15-50-statement-False-False,True,15,50,statement,False,False,0.550577528876444,0.6293601231965099,0.6274153830190868
+3,True-15-50-question-False-False,True,15,50,question,False,False,0.5684931506849313,0.659456926730381,0.6583266788364549
+4,False-False-False-False-True-False,False,False,False,False,True,False,0.5749219562955254,0.6541750337903679,

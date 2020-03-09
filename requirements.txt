@@ -1,0 +1,8 @@
+rasa
+dialogflow
+tensorflow==1.14
+string
+spacy
+random
+networkx
+rake_nltk
